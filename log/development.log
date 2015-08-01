@@ -2068,3 +2068,39 @@ Started GET "/assets/belt_strap_opt.png" for 127.0.0.1 at 2015-07-31 17:03:19 -0
 
 
 Started GET "/assets/belt_buckle_opt.png" for 127.0.0.1 at 2015-07-31 17:03:19 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-31 17:53:49 -0700
+Processing by IndexController#welcome as HTML
+  Rendered index/welcome.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 75ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2015-07-31 17:53:49 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2015-07-31 17:53:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-31 17:53:49 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-07-31 17:53:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-31 17:53:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-31 17:53:49 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-07-31 17:53:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-31 17:53:49 -0700
+
+
+Started GET "/assets/belt_strap_opt.png" for 127.0.0.1 at 2015-07-31 17:53:49 -0700
+
+
+Started GET "/assets/belt_buckle_opt.png" for 127.0.0.1 at 2015-07-31 17:53:49 -0700
