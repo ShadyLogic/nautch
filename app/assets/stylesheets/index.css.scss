@@ -1,3 +1,67 @@
 // Place all the styles related to the Index controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.debugger{
+  border: 1px solid red;
+}
+
+.pos-a{
+  position: absolute;
+}
+
+.pos-r{
+  position: relative;
+}
+
+.t-neg10{
+  top: -10px;
+}
+
+.t-0{
+  top: 0px;
+}
+
+.t-55{
+  top: 55px;
+}
+
+.t-50{
+  top: 50px;
+}
+
+.t-300{
+  top: 300px;
+}
+
+.l-neg75{
+  left: -75px;
+}
+
+.l-30{
+  left: 30px;
+}
+
+.r-neg50{
+  right: -50px;
+}
+
+.ta-c{
+  text-align: center;
+}
+
+.m-a{
+  margin: auto;
+}
+
+.w-100pc{
+  width: 100%;
+}
+
+.h-200{
+  height: 200px;
+}
+
+.d-ib{
+  display: inline-block;
+}
