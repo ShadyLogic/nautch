@@ -1,3 +1,11 @@
 // Place all the styles related to the Index controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#belt_strap{
+  content:url(asset_path("belt_strap_opt.png"))
+}
+
+#belt_buckle{
+  content:url(asset_path("belt_buckle_opt.png"))
+}

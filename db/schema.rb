@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20150731223935) do
     t.string   "username"
     t.string   "password_hash"
     t.string   "email"
+    t.string   "session"
     t.date     "birthday"
     t.datetime "created_at"
     t.datetime "updated_at"

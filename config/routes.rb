@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   get 'index/welcome'
 
+  post 'users/login', as: "user_login"
+
   resources :users
 
   root 'index#welcome'

@@ -46,8 +46,12 @@
   top: 50px;
 }
 
-.t-100{
-  top: 350px;
+.t-200{
+  top: 200px;
+}
+
+.t-220{
+  top: 220px;
 }
 
 .l-neg75{
@@ -78,6 +82,16 @@
   height: 200px;
 }
 
+.d-b{
+  display: block;
+}
+
+.d-i{
+  display: inline;
+}
+
 .d-ib{
   display: inline-block;
 }
+
+

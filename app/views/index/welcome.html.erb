@@ -1,5 +1,7 @@
-<img class='pos-a t-55 r-neg50' src=<%= asset_path("belt_strap_opt.png") %> alt="belt.png">
-<img class='pos-a t-50 l-neg75' src=<%= asset_path("belt_buckle_opt.png") %> alt="belt.png">
-<h1 class='pos-a l-30 t-neg10'>Nautch.co</h1>
-<h3 class='pos-r ta-c m-a t-100'>Dating is a game. Nautch keeps score.</h3>
-
+<%= react_component("BeltHeader") %>
+<% unless current_user(session[:session_id]) %>
+  <%= react_component("LoginForm") %>
+  <p class="pos-r ta-c t-220"><%= @error_message %></p>
+  <%= react_component("RegisterForm") %>
+<% end %>
+<%= session[:session_id] %>
