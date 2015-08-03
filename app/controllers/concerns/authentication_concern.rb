@@ -20,22 +20,18 @@ module AuthenticationConcern
     false
   end
 
-  def login_user(user, session_id)
-    p "*"*100
-    p "SESSION: #{session}"
-    p "*"*100
-    p "SESSION_ID: #{session_id}"
-    user.session = session_id
+  def login_user(user)
+    user.session = session[:session_id]
     user.save
   end
 
-  def current_user(session_id)
-    return nil unless user = User.find_by(session: session_id)
+  def current_user
+    return nil unless user = User.find_by(session: session[:session_id])
     @current_user ||= user
   end
 
-  def logged_in?(session_id)
-    !current_user(session_id).nil?
+  def logged_in?
+    !current_user.nil?
   end
 
   def logout
