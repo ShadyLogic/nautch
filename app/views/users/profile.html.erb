@@ -1,2 +1,5 @@
-<h1>Users#profile</h1>
-<p>Find me in app/views/users/profile.html.erb</p>
+<% if current_user.id == @user.id %>
+  <a href="<%= edit_user_path(@user) %>">Edit Profile</a>
+<% end %>
+<%= react_component("ProfileBar", { user: @user, age: @user.age }) %>
+<%= react_component("AchievementBar") %>

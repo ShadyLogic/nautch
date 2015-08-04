@@ -4,6 +4,17 @@ class CreateUsers < ActiveRecord::Migration
       t.string :username
       t.string :password_hash
       t.string :email
+      t.string :session
+
+      t.string :first_name
+      t.string :last_name
+      t.string :profile_image_url
+      t.string :height
+      t.string :weight
+      t.string :hair_color
+      t.string :eye_color
+      t.string :skin_color
+      t.string :sign
       t.date :birthday
 
       t.timestamps

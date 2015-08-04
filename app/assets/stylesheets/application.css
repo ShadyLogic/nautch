@@ -18,3 +18,109 @@
   border: 1px solid red;
  }*/
 
+<<<<<<< HEAD
+=======
+.debugger{
+  border: 1px solid red;
+}
+
+.pos-a{
+  position: absolute;
+}
+
+.pos-r{
+  position: relative;
+}
+
+.t-neg10{
+  top: -10px;
+}
+
+.t-0{
+  top: 0px;
+}
+
+.t-55{
+  top: 55px;
+}
+
+.t-50{
+  top: 50px;
+}
+
+.t-100{
+  top: 100px;
+}
+
+.t-200{
+  top: 200px;
+}
+
+.t-220{
+  top: 220px;
+}
+
+.l-30{
+  left: 30px;
+}
+
+.l-neg15{
+  left: -15px;
+}
+
+.l-neg75{
+  left: -75px;
+}
+
+.r-100{
+  right: 100px;
+}
+
+.r-neg50{
+  right: -50px;
+}
+
+.ta-l{
+  text-align: left;
+}
+
+.ta-c{
+  text-align: center;
+}
+
+.m-a{
+  margin: auto;
+}
+
+.w-100pc{
+  width: 100%;
+}
+
+.h-200{
+  height: 200px;
+}
+
+.d-b{
+  display: block;
+}
+
+.d-i{
+  display: inline;
+}
+
+.d-ib{
+  display: inline-block;
+}
+
+.f-l{
+  float: left;
+}
+
+.f-r{
+  float: right;
+}
+
+.w-200{
+  width: 200px;
+}
+>>>>>>> 741647d8a601ff551e0e60419e836b5998b6c335

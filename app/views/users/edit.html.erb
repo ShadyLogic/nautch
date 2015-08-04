@@ -1,0 +1,18 @@
+<h1>Edit Profile - <%= @user.username %></h1>
+
+<div class="pos-r l-30">
+  <form action="/users/<%= @user.id %>" method="POST">
+    <input type="hidden" name="_method" value="PUT">
+    <input type="text" name="first_name" value=<%= @user.first_name %>>First Name<br>
+    <input type="text" name="last_name" value=<%= @user.last_name %>>Last Name<br>
+    <input type="text" name="profile_image_url" value=<%= @user.profile_image_url %>>Avatar URL<br>
+    <input type="text" name="height" value=<%= @user.height %>>Height<br>
+    <input type="text" name="weight" value=<%= @user.weight %>>Weight<br>
+    <input type="text" name="hair_color" value=<%= @user.hair_color %>>Hair Color<br>
+    <input type="text" name="eye_color" value=<%= @user.eye_color %>>Eye Color<br>
+    <input type="text" name="skin_color" value=<%= @user.skin_color %>>Skin Color<br>
+    <input type="text" name="sign" value=<%= @user.sign %>>Sign<br>
+    <input type="date" name="birthday" value=<%= @user.birthday %>>Birthday<br>
+    <input type="submit" >
+  </form>
+</div>
