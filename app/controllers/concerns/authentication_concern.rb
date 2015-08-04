@@ -26,12 +26,10 @@ module AuthenticationConcern
   end
 
   def current_user
-    unless user = User.find_by(session: session[:session_id])
-    user = User.find_by(session: session[:session_id])
-      return User.new(username: "Guest", id: -1)
-    else
-      @current_user ||= user
+    if user = User.find_by(session: session[:session_id])
+      return user 
     end
+    User.new(username: "Guest", id: 0)
   end
 
   def logged_in?

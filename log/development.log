@@ -28616,3 +28616,901 @@ Started GET "/assets/belt_strap_opt.png" for 127.0.0.1 at 2015-08-04 11:51:12 -0
 
 
 Started GET "/assets/belt_buckle_opt.png" for 127.0.0.1 at 2015-08-04 11:51:12 -0700
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("created_at", "id", "updated_at", "username") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2015-08-04 18:53:34.584314"], ["id", -1], ["updated_at", "2015-08-04 18:53:34.584314"], ["username", "Guest"]]
+  [1m[36m (15.7ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+Processing by IndexController#welcome as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = -1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = -1 LIMIT 1
+  Rendered index/welcome.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 74ms (Views: 69.1ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/components/AchievementBar.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/components/BeltHeader.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/components/FormContainer.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/components/LoginForm.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/components/ProfileBar.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/components/ProfileImage.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/components/ProfileInfo.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/components/ProfileName.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/components/RegisterForm.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/belt_strap_opt.png" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+
+
+Started GET "/assets/belt_buckle_opt.png" for 127.0.0.1 at 2015-08-04 11:54:04 -0700
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 0 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = -1 LIMIT 1[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", -1]]
+  [1m[35m (17.3ms)[0m  COMMIT
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "id", "updated_at", "username") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2015-08-04 18:59:53.047327"], ["id", 0], ["updated_at", "2015-08-04 18:59:53.047327"], ["username", "Guest"]]
+  [1m[35m (9.4ms)[0m  COMMIT
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:00:01 -0700
+Processing by IndexController#welcome as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = -1 LIMIT 1[0m
+  Rendered index/welcome.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    1: <%= react_component("BeltHeader", user: "#{current_user.username}") %>
+    2: <% unless current_user %>
+    3:   <%= react_component("LoginForm") %>
+    4:   <p class="pos-r ta-c t-220"><%= @error_message %></p>
+  app/views/index/welcome.html.erb:1:in `_app_views_index_welcome_html_erb___4160558134377038410_70142326877840'
+
+
+  Rendered /home/jacob/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:00:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IndexController#welcome as HTML
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = -1 LIMIT 1
+  Rendered index/welcome.html.erb within layouts/application (19.6ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    1: <%= react_component("BeltHeader", user: "#{current_user.username}") %>
+    2: <% unless current_user %>
+    3:   <%= react_component("LoginForm") %>
+    4:   <p class="pos-r ta-c t-220"><%= @error_message %></p>
+  app/views/index/welcome.html.erb:1:in `_app_views_index_welcome_html_erb___3678486670128831071_70034664148620'
+
+
+  Rendered /home/jacob/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 0 LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:03:53 -0700
+Processing by IndexController#welcome as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1
+  Rendered index/welcome.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 117ms (Views: 113.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2015-08-04 12:03:53 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:03:53 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:03:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:53 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:53 -0700
+
+
+Started GET "/assets/components/AchievementBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/components/BeltHeader.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/components/FormContainer.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/components/LoginForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/components/ProfileBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/components/ProfileImage.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/components/ProfileInfo.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/components/ProfileName.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/components/RegisterForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/belt_strap_opt.png" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/assets/belt_buckle_opt.png" for 127.0.0.1 at 2015-08-04 12:03:54 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+Processing by IndexController#welcome as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1
+  Rendered index/welcome.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 60ms (Views: 59.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/components/AchievementBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/components/BeltHeader.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/components/FormContainer.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/components/LoginForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/components/ProfileBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/components/ProfileImage.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/components/ProfileInfo.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/components/ProfileName.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/components/RegisterForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/belt_strap_opt.png" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/assets/belt_buckle_opt.png" for 127.0.0.1 at 2015-08-04 12:05:15 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+Processing by IndexController#welcome as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1
+  Rendered index/welcome.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/components/AchievementBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/components/BeltHeader.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/components/FormContainer.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/components/ProfileBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/components/ProfileImage.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/components/LoginForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/components/RegisterForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/components/ProfileInfo.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/components/ProfileName.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/belt_strap_opt.png" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started GET "/assets/belt_buckle_opt.png" for 127.0.0.1 at 2015-08-04 12:05:24 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-08-04 12:06:23 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"username"=>"bootysaurus", "password"=>"[FILTERED]", "email"=>"Test@example.org", "birthday"=>"1987-01-23"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."username" = 'bootysaurus' LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'Test@example.org' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("birthday", "created_at", "email", "password_hash", "profile_image_url", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["birthday", "1987-01-23"], ["created_at", "2015-08-04 19:06:23.217865"], ["email", "Test@example.org"], ["password_hash", "$2a$10$xUIgJaQMvT5ZZivYLrjZRuNwBsRxAHaKeOckd8sWBGiNNjSc0xBqO"], ["profile_image_url", "http://heintendsvictory.org/wp-content/uploads/default-avatar.png"], ["updated_at", "2015-08-04 19:06:23.217865"], ["username", "bootysaurus"]]
+  [1m[36m (13.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session" = $1, "updated_at" = $2 WHERE "users"."id" = 1[0m  [["session", "8f753dcc188d895b561804f2c3fc59d6"], ["updated_at", "2015-08-04 19:06:23.236238"]]
+  [1m[35m (4.3ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/users/1
+Completed 302 Found in 99ms (ActiveRecord: 20.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-08-04 12:06:23 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1
+  Rendered users/profile.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined local variable or method `user' for #<UsersController:0x007f646cb7e058>):
+    1: <% if current_user.id == @user.id %>
+    2:   <a href="<%= edit_user_path(@user) %>">Edit Profile</a>
+    3: <% end %>
+    4: <%= react_component("ProfileBar", { user: @user, age: @user.age }) %>
+  app/controllers/concerns/authentication_concern.rb:29:in `current_user'
+  app/views/users/profile.html.erb:1:in `_app_views_users_profile_html_erb__2416623072905962817_70034648401020'
+  app/controllers/users_controller.rb:7:in `show'
+
+
+  Rendered /home/jacob/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1
+  Rendered users/profile.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 65ms (Views: 52.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/components/AchievementBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/components/BeltHeader.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/components/FormContainer.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/components/LoginForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/components/ProfileBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/components/ProfileImage.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/components/ProfileInfo.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/components/ProfileName.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:29 -0700
+
+
+Started GET "/assets/components/RegisterForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:30 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:30 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:30 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:30 -0700
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1
+  Rendered users/profile.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 59ms (Views: 56.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/components/BeltHeader.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/components/AchievementBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/components/FormContainer.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/components/LoginForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/components/ProfileInfo.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/components/ProfileBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/components/ProfileImage.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/components/RegisterForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/components/ProfileName.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:43 -0700
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered users/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/components/AchievementBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/components/BeltHeader.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/components/FormContainer.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/components/LoginForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/components/ProfileBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/components/ProfileImage.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/components/ProfileInfo.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/components/ProfileName.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/components/RegisterForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:09:55 -0700
+
+
+Started PUT "/users/1" for 127.0.0.1 at 2015-08-04 12:14:14 -0700
+Processing by UsersController#update as HTML
+  Parameters: {"first_name"=>"Fred", "last_name"=>"Flintstone", "profile_image_url"=>"http://mypartyshirt.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/f/r/fred-flintstone_2.png", "height"=>"5'11\"", "weight"=>"220", "hair_color"=>"Black", "eye_color"=>"Black", "skin_color"=>"Beige", "sign"=>"Aquarius", "birthday"=>"1990-01-23", "id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "birthday" = $1, "eye_color" = $2, "first_name" = $3, "hair_color" = $4, "height" = $5, "last_name" = $6, "profile_image_url" = $7, "sign" = $8, "skin_color" = $9, "updated_at" = $10, "weight" = $11 WHERE "users"."id" = 1  [["birthday", "1990-01-23"], ["eye_color", "Black"], ["first_name", "Fred"], ["hair_color", "Black"], ["height", "5'11\""], ["last_name", "Flintstone"], ["profile_image_url", "http://mypartyshirt.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/f/r/fred-flintstone_2.png"], ["sign", "Aquarius"], ["skin_color", "Beige"], ["updated_at", "2015-08-04 19:14:14.800568"], ["weight", "220"]]
+  [1m[36m (98.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/users/1
+Completed 302 Found in 107ms (ActiveRecord: 100.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-08-04 12:14:14 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1[0m
+  Rendered users/profile.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 63ms (Views: 60.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/components/AchievementBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/components/BeltHeader.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/components/FormContainer.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/components/LoginForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/components/ProfileBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/components/ProfileImage.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/components/ProfileInfo.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/components/ProfileName.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/components/RegisterForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:14:15 -0700
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-08-04 12:34:16 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1[0m
+  Rendered users/profile.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2697ms (Views: 2686.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/components/AchievementBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/components/BeltHeader.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/components/FormContainer.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/components/LoginForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/components/RegisterForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/components/profilebar/ProfileBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/components/profilebar/ProfileName.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/components/profilebar/ProfileInfo.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/components/profilebar/ProfileImage.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:19 -0700
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1[0m
+  Rendered users/profile.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 74ms (Views: 71.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/components/AchievementBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/components/BeltHeader.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/components/FormContainer.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/components/LoginForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/components/profilebar/ProfileBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/components/RegisterForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/components/profilebar/ProfileImage.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/components/profilebar/ProfileInfo.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/components/profilebar/ProfileName.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:34:22 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+Processing by IndexController#welcome as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session" = '8f753dcc188d895b561804f2c3fc59d6' LIMIT 1[0m
+  Rendered index/welcome.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/components/AchievementBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/components/BeltHeader.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/components/FormContainer.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/components/RegisterForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/components/LoginForm.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/components/profilebar/ProfileBar.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/components/profilebar/ProfileImage.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/components/profilebar/ProfileInfo.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/components/profilebar/ProfileName.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/belt_strap_opt.png" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
+
+
+Started GET "/assets/belt_buckle_opt.png" for 127.0.0.1 at 2015-08-04 12:35:23 -0700
