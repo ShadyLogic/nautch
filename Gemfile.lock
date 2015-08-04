@@ -78,7 +78,6 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     rdoc (4.2.0)
-      json (~> 1.4)
     react-rails (1.1.0)
       babel-transpiler (>= 0.7.0)
       coffee-script-source (~> 1.8)
@@ -122,10 +121,7 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 4.1.6)
-<<<<<<< HEAD
-=======
   rails_12factor
->>>>>>> 741647d8a601ff551e0e60419e836b5998b6c335
   react-rails (~> 1.0)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
