@@ -46,6 +46,10 @@
   top: 50px;
 }
 
+.t-100{
+  top: 100px;
+}
+
 .t-200{
   top: 200px;
 }
@@ -54,16 +58,28 @@
   top: 220px;
 }
 
-.l-neg75{
-  left: -75px;
-}
-
 .l-30{
   left: 30px;
 }
 
+.l-neg15{
+  left: -15px;
+}
+
+.l-neg75{
+  left: -75px;
+}
+
+.r-100{
+  right: 100px;
+}
+
 .r-neg50{
   right: -50px;
+}
+
+.ta-l{
+  text-align: left;
 }
 
 .ta-c{
@@ -94,4 +110,14 @@
   display: inline-block;
 }
 
+.f-l{
+  float: left;
+}
 
+.f-r{
+  float: right;
+}
+
+.w-200{
+  width: 200px;
+}

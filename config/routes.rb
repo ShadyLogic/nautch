@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   get 'index/welcome'
 
-  post 'users/login', as: "user_login"
+  get 'users/logout', as: "users_logout"
+
+  post 'users/login', as: "users_login"
 
   resources :users
 

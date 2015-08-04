@@ -1,4 +1,4 @@
-var RegisterForm = React.createClass({
+var FormContainer = React.createClass({
   render: function(){
     return(
       <div>

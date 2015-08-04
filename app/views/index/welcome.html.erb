@@ -1,5 +1,5 @@
-<%= react_component("BeltHeader") %>
-<% unless current_user %>
+<%= react_component("BeltHeader", user: "#{current_user.username}") %>
+<% unless !current_user.session.nil? %>
   <%= react_component("LoginForm") %>
   <p class="pos-r ta-c t-220"><%= @error_message %></p>
   <%= react_component("RegisterForm") %>
