@@ -70,6 +70,10 @@
   left: -75px;
 }
 
+.l-neg90{
+  left: -90px;
+}
+
 .r-100{
   right: 100px;
 }
@@ -90,8 +94,16 @@
   margin: auto;
 }
 
+.w-400{
+  width: 400px;
+}
+
 .w-100pc{
   width: 100%;
+}
+
+.h-75{
+  height: 75px;
 }
 
 .h-200{
@@ -120,4 +132,9 @@
 
 .w-200{
   width: 200px;
+}
+
+#five_stars{
+  background-image: url('/assets/five_stars.png');
+  background-size: 400px 75px;
 }

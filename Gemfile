@@ -8,6 +8,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'bcrypt'
 gem 'react-rails', '~> 1.0'
 
+gem 'faker'
+
 gem 'rails_12factor', group: :production
 
 gem 'jquery-rails'

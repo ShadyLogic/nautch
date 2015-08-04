@@ -9,6 +9,17 @@ class User < ActiveRecord::Base
     now.year - self.birthday.year - ((now.month > self.birthday.month || (now.month == self.birthday.month && now.day >= self.birthday.day)) ? 0 : 1)
   end
 
+  def score
+    ratings = Rating.where(target_id: self.id)
+    unless ratings.empty?
+      avg_rating = ratings.map { |rating| rating.score }
+      num_of_ratings = avg_rating.length
+      avg_rating.reduce(:+) / num_of_ratings
+    else
+      return 25
+    end
+  end
+
   def password
     @password ||= Password.new(password_hash)
   end
