@@ -42,11 +42,15 @@ class UsersController < ApplicationController
   end
 
   def create
-    if user = register(params[:username], params[:password], params[:email], params[:birthday])
-      login_user(user)
-      redirect_to user_path user
+    if params[:birthday] > DateTime.now - 18.years
+      redirect_to index_welcome_path(:error_message => "You must be at least 18 years old to register")
     else
-      redirect_to index_welcome_path(:error_message => "A user with that info already exists")
+      if user = register(params[:username], params[:password], params[:email], params[:birthday])
+        login_user(user)
+        redirect_to user_path user
+      else
+        redirect_to index_welcome_path(:error_message => "A user with that info already exists")
+      end
     end
   end
 

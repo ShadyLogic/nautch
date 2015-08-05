@@ -43,6 +43,7 @@ module AuthenticationConcern
   end
 
   def register(username, password, email, birthday)
+
     if User.find_by(username: username) || User.find_by(email: email)
       return false
     else

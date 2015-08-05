@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   # users.password_hash in the database is a :string
   include BCrypt
 
+  validate :is_not_a_minor
+
   def age
     now = Time.now.utc.to_date
     now.year - self.birthday.year - ((now.month > self.birthday.month || (now.month == self.birthday.month && now.day >= self.birthday.day)) ? 0 : 1)
@@ -27,5 +29,12 @@ class User < ActiveRecord::Base
   def password=(new_password)
     @password = Password.create(new_password)
     self.password_hash = @password
+  end
+
+  private
+
+  def is_not_a_minor
+    errors.add("You must be older than 18") if
+      birthday > Date.today - 18.years
   end
 end

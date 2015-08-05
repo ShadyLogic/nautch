@@ -26,17 +26,17 @@ var RatingBar = React.createClass({
         <h3 className="pos-r l-neg90 ta-c">Score: {this.state.score / 10}</h3>
 
         { this.props.has_rated  ?
-            this.props.target_id == this.props.rater_id ?
-              null
-            :
-              <h4 className="pos-r l-neg90 t-neg10">Your Rating: {this.props.has_rated.score / 10}</h4>
+            <h4 className="pos-r l-neg90 t-neg10">Your Rating: {this.props.has_rated.score / 10}</h4>
         :
-          <form id="rating_form" action="/ratings" method="POST">
-            <input type="hidden" name="rater_id" value={this.props.rater_id} />
-            <input type="hidden" name="target_id" value={this.props.target_id} />
-            <input className="pos-r l-neg90" name="score" type="range" min="1" max="10" onChange={this.updateStars} />
-            <input className="pos-r l-neg90" type="submit" value="Rate" />
-          </form> 
+            this.props.target_id == this.props.rater_id ?
+                null
+            :
+                <form id="rating_form" action="/ratings" method="POST">
+                  <input type="hidden" name="rater_id" value={this.props.rater_id} />
+                  <input type="hidden" name="target_id" value={this.props.target_id} />
+                  <input className="pos-r l-neg90" name="score" type="range" min="1" max="10" onChange={this.updateStars} />
+                  <input className="pos-r l-neg90" type="submit" value="Rate" />
+                </form> 
         }
 
       </div>
