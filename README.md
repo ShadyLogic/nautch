@@ -18,6 +18,7 @@ Features:
 ____________
 
 * Leaderboard On Index Page
+
 ✓ Star rating and ranking on profile page
 * Achievements
 * Search by attributes
