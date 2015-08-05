@@ -1,6 +1,7 @@
+<a class="f-r" href="/">Home</a><br/>
 <% if current_user.id == @user.id %>
   <a class="f-r" href="<%= edit_user_path(@user) %>">Edit Profile</a>
 <% end %>
 <%= react_component("ProfileBar", { user: @user, age: @user.age }) %>
-<%= react_component("RatingBar", { rater_id: current_user.id, target_id: @user.id, score: @user.score  }) %>
+<%= react_component("RatingBar", { rater_id: current_user.id, target_id: @user.id, score: @user.score, has_rated: @has_rated }) %>
 <%= react_component("AchievementBar") %>

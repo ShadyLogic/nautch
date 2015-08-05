@@ -4,6 +4,10 @@ class UsersController < ApplicationController
 
   def show
     if @user = User.find_by(id: params[:id])
+      @has_rated = Rating.find_by(rater_id: current_user.id, target_id: @user.id)
+      if current_user.id.zero?
+        @has_rated = true
+      end
       render "profile"
     else
       redirect_to index_welcome_path

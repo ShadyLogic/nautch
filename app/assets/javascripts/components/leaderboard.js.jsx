@@ -10,7 +10,7 @@ var Leaderboard = React.createClass({
       <div className="pos-r m-a ta-c t-220">
         <h4 className="pos-r l-30">Top Users:</h4>
         {this.props.top_users.map(function(user) {
-          return <LeaderboardItem id= {user.object.id} name={user.object.username} score={user.score} avatar_url={user.object.profile_image_url}/>;
+          return <LeaderboardItem key={user.object.id} id= {user.object.id} name={user.object.username} score={user.score} avatar_url={user.object.profile_image_url}/>;
         })}
       </div>
     );
