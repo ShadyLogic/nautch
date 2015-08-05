@@ -62,6 +62,19 @@ guest.save
 		)
 
 	new_user.password = "1234"
-	new_user.save
+	begin
+		new_user.save
+	rescue
+		p "SAVE ERROR - User: #{new_user.username} | ID: #{new_user.id}"
+	end
+
+
+	10.times do
+
+		target = (1..150).to_a
+		target.delete(4)
+
+		Rating.create(rater_id: new_user.id, target_id: target.sample, score: [5,10,15,20,25,30,35,40,45,50].sample)
+	end
 
 end
