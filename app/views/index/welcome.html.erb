@@ -3,5 +3,7 @@
   <%= react_component("LoginForm") %>
   <p class="pos-r ta-c t-220"><%= @error_message %></p>
   <%= react_component("RegisterForm") %>
+<% else %>
+  <a class="pos-a r-8 t-42" href='<%= users_logout_path %>'>Logout</a>
 <% end %>
 
